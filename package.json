@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && npm run build",
+    "build": "resume export dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgollangi/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgollangi/resume/issues"
+  },
+  "homepage": "https://github.com/pgollangi/resume#readme",
+  "devDependencies": {
+    "jsonresume-theme-paper": "^0.5.0",
+    "resume-cli": "^3.0.6"
+  }
+}
