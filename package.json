@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm install && npm run build",
-    "build": "resume export dist/index.html"
+    "build": "resume export --theme paper dist/index.html"
   },
   "repository": {
     "type": "git",
