@@ -3,20 +3,21 @@
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
-    "theme": "paper"
+    "theme": "full"
   },
   "basics": {
-    "name": "Prasanna Kumar",
+    "name": "Prasanna Kumar Gollangi",
     "label": "Fullstack Developer",
     "image": "https://avatars.githubusercontent.com/u/6123002",
-    "email": "prassu158@gmail.com",
+    "email": "prasannakumar.gollangi@gmail.com",
     "phone": "+91-8985995161",
-    "website": "https://pgollangi.com/",
-    "url": "https://pgollangi.com/",
-    "summary": "I'm a full stack web developer who can build apps from the ground up. I've started my career at startup so I am use to wearing many hats. I am a very product focussed developer who prioritizes user feedback first and foremost. I'm generally very flexible when investigating new roles.",
+    "website": "https://p11r.dev/",
+    "url": "https://p11r.dev/",
+    "summary": "I'm a full stack developer, having 12 years of experience in design and developing the software, who can build apps from the ground up. I am a very product focussed developer who prioritizes user feedback first and foremost. I've started my career at startup so I am use to wearing many hats. I'm generally very flexible when investigating new roles.",
+    "resume": "https://registry.jsonresume.org/pgollangi",
     "location": {
       "countryCode": "IN",
-      "address": "Hyderabad, India"
+      "address": "Hyderabad, Telangana, India"
     },
     "profiles": [
       {
@@ -27,7 +28,7 @@
       {
         "url": "https://github.com/pgollangi",
         "username": "pgollangi",
-        "network": "github"
+        "network": "Github"
       },
       {
         "network": "Twitter",
@@ -40,41 +41,27 @@
     {
       "name": "OpenText",
       "position": "Lead Software Engineer",
-      "startDate": "2021-04-30",
+      "startDate": "2018-03-05",
       "highlights": [
-        "Build microservice backend with Java and SpringBoot.",
-        "Build widget based SmartUI app with Backbone.js, RequireJs (AMD).",
+        "Create microservice backend with Java and SpringBoot.",
+        "Develop widget based SmartUI app with Backbone.js, RequireJs (AMD).",
         "Cross framework solution to embed components created by modern frameworks.",
         "Create re-usable standalone web components.",
+        "Developed dev tools for working with OT2 cloud apps",
         "Used Figma for design and UX work.",
         "Optimizing page loading performance using caching, pre-fetch, compression and other techniques.",
-        "Lead an agile team",
+        "Lead an agile team of developers",
         "Perform peer reviews",
         "Jasmine, Karma, Mockito, JIRA, GitLab CI/CD, CloudFoundry, Docker"
       ],
-      "summary": "OpenText is a Canadian enterprise product company that develops and sells enterprise information management software and other add-ons around information management. Contributed to building content management service under OT2 cloud services",
-      "url": "https://www.opentext.com/",
-      "location": "Hyderabad, India"
-    },
-    {
-      "name": "OpenText",
-      "position": "Senior Software Engineer",
-      "startDate": "2018-03-31",
-      "endDate": "2021-03-31",
-      "highlights": [
-        "Java",
-        "SpringBoot",
-        "Angular",
-        "BackboneJs"
-      ],
-      "summary": "",
+      "summary": "OpenText is a Canadian enterprise product company that develops and sells enterprise information management software and other add-ons around information management. I'm part of building SaaS based content management solutions under OT2 cloud services",
       "url": "https://www.opentext.com/",
       "location": "Hyderabad, India"
     },
     {
       "name": "PurpleTalk",
       "position": "Module Lead",
-      "startDate": "2016-06-30",
+      "startDate": "2016-06-01",
       "endDate": "2018-02-28",
       "highlights": [
         "Design and develop tenant-based architecture based on Spring, Hibernate, Postgres, Redis",
@@ -83,7 +70,7 @@
         "Create prototypes for sales and promotional activities.",
         "Built micro service based RESTful APIs using Java, AWS for IOT apps",
         "Create hybrid mobile apps using Ionic",
-        "Postgres, Ionic2, Cordova, Sequelize"
+        "AWS, Microservices, Postgres, Ionic2, Cordova, Sequelize, ReactJS"
       ],
       "summary": "PurpleTalk is an IT services, mobile application and game development company. I have contributed wide variety of projects at PurpleTalk right from created backend services using SprintBoot, NodeJs, Micro services, and hybrid mobile apps using Iconic.",
       "url": "https://purpletalk.com/",
@@ -92,17 +79,18 @@
     {
       "name": "Vimukti Technologies",
       "position": "Senior Software Engineer",
-      "startDate": "2010-05-31",
-      "endDate": "2016-05-31",
+      "startDate": "2010-05-17",
+      "endDate": "2016-05-22",
       "highlights": [
-        "Java",
-        "",
-        "",
-        "PostgreSQL",
-        "OSGi, Hibernate, GWT"
+        "Developer bootstraping of OSGi based multi-tenant app for ecgine",
+        "Developed user and tenant on-boarding activities under ecgine.",
+        "Developed active directory protocols such as DNS, DHCP using Java under a prototype.",
+        "Along with good accounting domain knowledge, handled complex accounting operations.",
+        "Built accounterlive frontend with GWT, RPC",
+        "OSGi, Hibernate, Postgres, GWT"
       ],
-      "summary": "Vimukti Technologies is startup organization committed to building enterprise softwares ",
-      "url": "https://www.linkedin.com/company/325886",
+      "summary": "Vimukti Technologies is startup organization committed to building enterprise software. I'm gratefully got opportunity to work with almost all sort of tech stacks.",
+      "url": "https://www.linkedin.com/company/vimukti-technologies",
       "location": "Hyderabad, India"
     }
   ],
@@ -112,21 +100,17 @@
       "institution": "The Institution of Electronics and Telecommunication Engineers (IETE)",
       "area": "Computer Science",
       "studyType": "Bachelor of Technology (BTech)",
-      "startDate": "2012-12-31",
-      "endDate": "2016-12-31",
+      "startDate": "2012-06-17",
+      "endDate": "2016-02-28",
       "score": "",
       "courses": []
     },
     {
       "institution": "Government Institute of Electronics",
       "area": "Computer Engineering",
-      "studyType": "Diploma",
-      "startDate": "2007-12-31",
-      "endDate": "2010-12-31",
-      "score": "",
-      "courses": [
-        "SDECP - Spl. Diploma in Electronics with Specialization in Computer Engg."
-      ]
+      "studyType": "SDECP - Spl. Diploma in Electronics with Specialization in Computer Engg.",
+      "startDate": "2007-06-18",
+      "endDate": "2010-12-31"
     }
   ],
   "awards": [],
@@ -196,25 +180,75 @@
   ],
   "projects": [
     {
+      "name": "Core Content Management",
+      "startDate": "2020-02-15",
+      "summary": "OT2 Core Content Management is a next-generation, SaaS Content Services Platform (CSP). Core Content combines content management expertise with integration into the applications that underpin business processes, including SAP S/4HANA Public Cloud, Salesforce, Microsoft 365.",
+      "url": "https://www.opentext.com/core-content",
+      "stack": ["SpringBoot", "Backbone.js", "Angular"]
+    },
+    {
+      "name": "Content Server SmartUI",
+      "startDate": "2018-03-05",
+      "summary": "",
+      "url": "http://www.accounterlive.com/",
+      "endDate": "2020-02-14",
+      "stack": ["BackboneJS", "MarionetteJS", "RequireJS"]
+    },
+    {
+      "name": "TueoHealth",
+      "startDate": "2017-03-05",
+      "summary": "Tueo Health is creating a solution that puts this meaning to work in asthma management.  The solution delivers accurate, objective indicators of asthma control together with clinical insight and understanding of what patients and their families need to achieve the best control and outcomes.",
+      "url": "https://www.tueohealth.com/",
+      "endDate": "2017-08-15",
+      "stack": ["Node", "Sequelize", "MySQL"]
+    },
+    {
+      "name": "Senzit (Mann+Hummel)",
+      "startDate": "2016-06-05",
+      "summary": "Senzit is MANN-HUMMEL's filter solution IOT mobile application for your industrial vehicles. It brings actionable insights regarding air filter health among other information, which is customized for your unique operating conditions. Senzit helps avoid unnecessary machine downtime and reduces operating cost.",
+      "url": "https://www.tueohealth.com/",
+      "endDate": "2017-02-15",
+      "stack": ["Typescript", "Ionic2", "Cordova"]
+    },
+    {
+      "name": "Ecgine",
+      "startDate": "2013-06-31",
+      "summary": "Ecgine is a unified business suite to develop and deploy business application on web. Ecgine provides perfect platform for business application developers to get complete control over their business system built on it.  ",
+      "url": "http://www.ecgine.com/",
+      "endDate": "2016-05-31",
+      "stack": ["Java", "OSGi", "Postgres"]
+    },
+    {
       "name": "Accounter",
       "startDate": "2011-02-28",
       "summary": "A Business application integrates functionality like Accounting, using which you can manage your accounts.",
       "url": "http://www.accounterlive.com/",
-      "endDate": "2012-05-31"
+      "endDate": "2013-05-31",
+      "stack": ["Java", "Hibernate", "Postgres", "GWT"]
     },
     {
-      "name": "Ecgine",
-      "startDate": "2012-05-31",
-      "summary": "A tool to build and deploy business applications on Web, Mobile and Tablets. And this is an online tool that takes your requirement specification and generates native applications on all platforms.",
-      "url": "http://www.ecgine.com/",
-      "endDate": "2012-05-31"
+      "name": "covidhospitals.online (open source)",
+      "summary": "Website to locate Covid19 Hospitals in India on Map with beds availability, hospital contact details, directions to navigate.",
+      "url": "https://covidhospitals.online/",
+      "stack": ["ReactJS", "Leaflet", "OpenStreetMap", "MapQuest", "Netlify"]
     },
     {
-      "name": "Bizantra",
-      "startDate": "2010-05-31",
-      "summary": "A Business application integrates many functionality like User Management, Email Marketing, HR.",
-      "url": "http://bizantra.com/",
-      "endDate": "2011-01-31"
+      "name": "pgollangi/netselect (open source)",
+      "summary": "A CLI tool and Go library to find the fastest site based on the lowest ICMP latency.",
+      "url": "https://pgollangi.github.io/netselect",
+      "stack": ["Golang", "CLI"]
+    },
+    {
+      "name": "pgollangi/fastget (open source)",
+      "summary": "A CLI tool and Go library to ultra fast download files over HTTP(S)",
+      "url": "https://pgollangi.github.io/fastget",
+      "stack": ["Golang", "CLI"]
+    },
+    {
+      "name": "pgollangi/go-portfinder (open source)",
+      "summary": "Go implementation of npm portfinder.",
+      "url": "https://github.com/pgollangi/go-portfinder",
+      "stack": ["Golang", "Library"]
     }
   ]
 }

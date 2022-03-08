@@ -1,0 +1,600 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	<title>Prasanna Kumar  - Fullstack Developer</title>
+	<style>
+  	:root {
+  --accent:#BC1B39;
+  --anchor-color: #2C85B1;
+  --blue:#2C85B1;
+  --copy-color-light: #666666;
+  --copy-color: #242424;
+  --grey:#999999;
+  --light-grey:#ededed;
+  --white:#FFFFFF;
+  --base-font-size: 12pt;
+  --spacing-double: 1rem;
+  --spacing-small: .1rem;
+  --spacing: .5rem;
+}
+@media (min-width: 567px) {
+  :root {
+    --spacing-double: 1.5rem;
+    --spacing-small: .25rem;
+    --spacing: .75rem;
+  }
+}
+@media print {
+  :root {
+    --anchor-color: #000000;
+    --base-font-size: 9pt;
+    --copy-color-light: #000000;
+    --copy-color: #000000;
+  }
+}
+
+body {
+  color: var(--copy-color);
+  display: flex;
+  font: var(--base-font-size) "Open Sans", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  line-height: 1.25;
+  -webkit-print-color-adjust: exact;
+}
+
+em {
+  color: var(--grey);
+}
+
+p {
+  font-size: 90%;
+}
+
+a {
+  color: var(--anchor-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+section {
+  margin: var(--spacing) 0 var(--spacing-double);
+}
+
+blockquote {
+  margin-bottom: 0 0 var(--spacing);
+}
+
+#resume {
+  background: var(--white);
+  margin: var(--spacing) var(--spacing-double);
+  max-width: 760px;
+}
+
+section.heading header h1 {
+  font-size: 180%;
+  font-weight: 300;
+  margin: 0;
+}
+section.heading header h2 {
+  font-size: 140%;
+  font-weight: 400;
+  margin: 0;
+}
+section.heading header h2::after {
+  display: none;
+}
+section.heading header .contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing);
+}
+@media (min-width: 567px) {
+  section.heading header .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+section.heading header address {
+  font-size: 90%;
+  font-style: normal;
+  padding-bottom: var(--spacing);
+}
+section.heading .profiles {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing);
+}
+@media (min-width: 567px) {
+  section.heading .profiles {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+section.heading .profiles .profile.print {
+  display: none;
+}
+@media print {
+  section.heading .profiles .profile.print {
+    display: block;
+  }
+}
+section.heading .profiles strong {
+  margin: 0 var(--spacing-small) 0 0;
+}
+section.heading .profiles span {
+  margin: 0 var(--spacing-double) 0 0;
+}
+
+section.experience .item {
+  border-bottom: 1px solid var(--light-grey);
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
+}
+section.experience .item:last-child {
+  border-bottom: none;
+}
+section.experience .item header a,
+section.experience .item header h3 {
+  color: var(--copy-color);
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+}
+@media (max-width: 566px) {
+  section.experience .item header .subhead {
+    flex-direction: column;
+    margin-bottom: var(--spacing-double);
+  }
+}
+section.experience .item .summary p {
+  margin-top: var(--spacing);
+}
+section.experience .item .summary p:first-child {
+  margin-top: var(--spacing-small);
+}
+section.experience .item .summary p:last-child {
+  margin-bottom: var(--spacing-small);
+}
+section.experience .item .position {
+  color: var(--copy-color-light);
+  font-size: 100%;
+  font-weight: 500;
+  margin: var(--spacing-small) 0;
+}
+section.experience .item .startDate,
+section.experience .item .endDate {
+  color: var(--grey);
+}
+section.skills .item {
+  margin: 0;
+  padding: 0 0 var(--spacing);
+}
+section.skills .item:first-child {
+  margin-top: var(--spacing);
+}
+section.skills .item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.skills .item .name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+section.skills .item .keywords {
+  display: inline-block;
+  font-size: 90%;
+  vertical-align: top;
+}
+
+section.volunteering .item .position {
+  font-weight: 600;
+}
+section.volunteering .item header .subhead {
+  margin-top: var(--spacing);
+}
+section.projects .item strong {
+  color: var(--copy-color-light);
+  font-weight: 600;
+  display: inline-block;
+  padding-top: var(--spacing);
+}
+section.awards .item .title {
+  font-weight: 600;
+}
+section.publications .item .name {
+  font-weight: 600;
+}
+section.languages .language-item {
+  align-items: baseline;
+  display: flex;
+  justify-content: start;
+}
+section.languages .language-item:first-child {
+  margin-top: var(--spacing);
+}
+section.languages .language-item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.languages .language-item .language {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+section.languages .language-item .fluency {
+  color: var(--copy-color-light);
+  font-style: italic;
+}
+
+section.interests .item {
+  margin-bottom: var(--spacing);
+}
+section.interests .item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.interests .item .name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+section.references .item blockquote {
+  font-style: italic;
+  margin-bottom: 0;
+  margin-left: var(--spacing);
+}
+section.references .item .name {
+  color: var(--copy-color-light);
+}
+
+section h2 {
+  color: var(--accent);
+  font-size: 135%;
+  font-weight: 400;
+  margin: 0 0 var(--spacing-double);
+  position: relative;
+  text-transform: uppercase;
+}
+section h2::after {
+  background: var(--accent);
+  bottom: -10px;
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 2.5rem;
+}
+section header h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+section.experience .item .highlights, section.volunteering .highlights, section.projects .highlights,
+section.projects .keywords,
+section.projects .roles, section.education .item .courses {
+  font-size: 90%;
+  line-height: 1.3;
+  list-style: square;
+  margin: var(--spacing-small) 0 var(--spacing);
+  padding-left: var(--spacing-double);
+}
+
+section.experience .item, section.volunteering .item, section.projects .item, section.education .item, section.awards .item, section.publications .item, section.interests .item, section.references .item {
+  page-break-inside: avoid;
+}
+
+@media print {
+  section.heading .profiles .profile:not(.print), section.publications .item .website {
+    display: none;
+  }
+}
+
+section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 567px) {
+  section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+    flex-direction: row;
+  }
+}
+
+@media print {
+  body {
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+	</style>
+	<style media="print">
+		body { font-size: 12px; }
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+	
+	</head>
+  <body>	
+    <div id="resume">
+      <section id="heading" class="heading">
+        <header>
+          <h1>
+            Prasanna Kumar
+          </h1>
+          <h2>Fullstack Developer</h2>
+          <div class="summary"><p>I'm a full stack <b>web developer</b> who can build apps from the ground up. I've started my career at startup so I am use to wearing many hats. I am a very product focussed developer who prioritizes user feedback first and foremost. I'm generally very flexible when investigating new roles.</p></div>
+          <div class="contact">
+            <span class="contact-detail"><a href="mailto:prasannakumar.gollangi@gmail.com">prasannakumar.gollangi@gmail.com</a></span>
+            <span class="contact-detail">+91-8985995161</span>
+            <span class="contact-detail"><a href="https://pgollangi.com/" target="external">https://pgollangi.com/</a></span>
+          </div>
+          <address>
+            <span class="address-detail">Hyderabad, India</span>
+            <span class="address-detail">IN</span>
+          </address>
+        </header>
+      
+        <div class="profiles">
+          <div class="profile">
+            <strong class="network">LinkedIn</strong>
+            <span class="username">
+              <a href="https://www.linkedin.com/in/pgollangi/" target="external">@pgollangi</a>
+            </span>
+          </div>
+          <div class="profile print">
+            <span class="username">
+              https://www.linkedin.com/in/pgollangi/
+            </span>
+          </div>
+          <div class="profile">
+            <strong class="network">github</strong>
+            <span class="username">
+              <a href="https://github.com/pgollangi" target="external">@pgollangi</a>
+            </span>
+          </div>
+          <div class="profile print">
+            <span class="username">
+              https://github.com/pgollangi
+            </span>
+          </div>
+          <div class="profile">
+            <strong class="network">Twitter</strong>
+            <span class="username">
+              <a href="https://twitter.com/pkgollangi" target="external">@pkgollangi</a>
+            </span>
+          </div>
+          <div class="profile print">
+            <span class="username">
+              https://twitter.com/pkgollangi
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="item">
+          <h2>Skills</h2>
+          <div class="name">Frontend</div>
+          <div class="keywords">
+            Javascript / Typescript,
+            HTML / JSX,
+            SCSS / CSS / Styled Components,
+            Angular,
+            Ionic,
+            Backbone.js,
+            Marionette.js,
+            RequireJs (AMD)
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Backend</div>
+          <div class="keywords">
+            Java,
+            Node,
+            SpringBoot,
+            Serverless,
+            Postgres,
+            MySQL,
+            Hibernate
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Tools &amp; DevOps</div>
+          <div class="keywords">
+            Eclipse,
+            Git,
+            Perforce,
+            Maven,
+            Gradle,
+            CloudFoundry,
+            Docker,
+            Gitlab CI/CD
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <section class="item">
+          <h2>Experience</h2>
+          <header>
+            <h3 class="name"><a href="https://www.opentext.com/" target="external">OpenText</a></h3>
+            <div class="subhead">
+            <span class="position">Lead Software Engineer</span>
+            <small class="dates">Apr 2021
+             - Present</small>
+            </div>
+          </header>
+          <div class="summary"><p>OpenText is a Canadian enterprise product company that develops and sells enterprise information management software and other add-ons around information management. Contributed to building content management service under OT2 cloud services</p></div>
+          <ul class="highlights">
+            <li>Build microservice backend with Java and SpringBoot.</li>
+            <li>Build widget based SmartUI app with Backbone.js, RequireJs (AMD).</li>
+            <li>Cross framework solution to embed components created by modern frameworks.</li>
+            <li>Create re-usable standalone web components.</li>
+            <li>Used Figma for design and UX work.</li>
+            <li>Optimizing page loading performance using caching, pre-fetch, compression and other techniques.</li>
+            <li>Lead an agile team</li>
+            <li>Perform peer reviews</li>
+            <li>Jasmine, Karma, Mockito, JIRA, GitLab CI/CD, CloudFoundry, Docker</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.opentext.com/" target="external">OpenText</a></h3>
+            <div class="subhead">
+            <span class="position">Senior Software Engineer</span>
+            <small class="dates">Mar 2018
+             - Mar 2021</small>
+            </div>
+          </header>
+          <ul class="highlights">
+            <li>Java</li>
+            <li>SpringBoot</li>
+            <li>Angular</li>
+            <li>BackboneJs</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://purpletalk.com/" target="external">PurpleTalk</a></h3>
+            <div class="subhead">
+            <span class="position">Module Lead</span>
+            <small class="dates">Jun 2016
+             - Feb 2018</small>
+            </div>
+          </header>
+          <div class="summary"><p>PurpleTalk is an IT services, mobile application and game development company. I have contributed wide variety of projects at PurpleTalk right from created backend services using SprintBoot, NodeJs, Micro services, and hybrid mobile apps using Iconic.</p></div>
+          <ul class="highlights">
+            <li>Design and develop tenant-based architecture based on Spring, Hibernate, Postgres, Redis</li>
+            <li>Develop bot framework based on MSBotFramework and DialogFlow</li>
+            <li>Handle client communications and be the POC for clients.</li>
+            <li>Create prototypes for sales and promotional activities.</li>
+            <li>Built micro service based RESTful APIs using Java, AWS for IOT apps</li>
+            <li>Create hybrid mobile apps using Ionic</li>
+            <li>Postgres, Ionic2, Cordova, Sequelize</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/325886" target="external">Vimukti Technologies</a></h3>
+            <div class="subhead">
+            <span class="position">Senior Software Engineer</span>
+            <small class="dates">May 2010
+             - May 2016</small>
+            </div>
+          </header>
+          <div class="summary"><p>Vimukti Technologies is startup organization committed to building enterprise softwares </p></div>
+          <ul class="highlights">
+            <li>Java</li>
+            <li></li>
+            <li></li>
+            <li>PostgreSQL</li>
+            <li>OSGi, Hibernate, GWT</li>
+          </ul>
+        </section>
+      </section>
+      <section id="projects" class="projects">
+        <section class="item">
+          <h2>Projects</h2>
+          <header>
+            <h3 class="name">Accounter</h3>
+            <small class="subhead">Feb 2011
+             - May 2012</small>
+          </header>
+          <div class="summary"><p>A Business application integrates functionality like Accounting, using which you can manage your accounts.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Ecgine</h3>
+            <small class="subhead">May 2012
+             - May 2012</small>
+          </header>
+          <div class="summary"><p>A tool to build and deploy business applications on Web, Mobile and Tablets. And this is an online tool that takes your requirement specification and generates native applications on all platforms.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Bizantra</h3>
+            <small class="subhead">May 2010
+             - Jan 2011</small>
+          </header>
+          <div class="summary"><p>A Business application integrates many functionality like User Management, Email Marketing, HR.</p></div>
+        </section>
+      </section>
+      <section id="education" class="education">
+        <div class="item">
+          <h2>Education</h2>
+          <header>
+              <h3 class="name">The Institution of Electronics and Telecommunication Engineers (IETE)</h3>
+            <small class="dates">
+              <span class="startDate">Dec 2012</span>
+              <span class="endDate"> - Dec 2016</span>
+            </small>
+          </header>
+          <div class="qualification">
+            <span class="studyType">Bachelor of Technology (BTech)</span>
+            <span class="area">Computer Science</span>
+          </div>
+        </div>
+        <div class="item">
+          <header>
+              <h3 class="name">Government Institute of Electronics</h3>
+            <small class="dates">
+              <span class="startDate">Dec 2007</span>
+              <span class="endDate"> - Dec 2010</span>
+            </small>
+          </header>
+          <div class="qualification">
+            <span class="studyType">Diploma</span>
+            <span class="area">Computer Engineering</span>
+            <br>
+            <strong>Courses</strong>
+            <ul class="courses">
+              <li>SDECP - Spl. Diploma in Electronics with Specialization in Computer Engg.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="interests" class="interests">
+        <div class="item">
+          <h2>Interests</h2>
+          <span class="name">Open Source</span>
+        </div>
+        <div class="item">
+          <span class="name">Music / Jamming</span>
+        </div>
+      </section>
+      <section id="references" class="references">
+        <div class="item">
+          <h2>References</h2>
+          <blockquote class="reference">Got an oppurtunity to work with prasanna, such a wonderful guy to work with, technical enthusiast ,passionate coder,I personally appreciate his willingness to invent and innovate always approachable.He is very versatile , can adopt to any conditions and align himself to get the job done.He is an achiever ,diligent always open to learn new things ,keep experiementing, way to go!!!  cheers Prasanna </blockquote>
+          <div class="name">— vijay krishna</div>
+        </div>
+        <div class="item">
+          <blockquote class="reference">He is most talented person, and he had lot of patience on explain any concept. I feel more comfortable to work with him.</blockquote>
+          <div class="name">— Nagaraju Palla</div>
+        </div>
+        <div class="item">
+          <blockquote class="reference">Prasanna Kumar has excellent Programming skills. He is proactive in every front and yet process oriented. He handled both good times and turbulent times with equal dexterity. It is a wonderful experience working with Him</blockquote>
+          <div class="name">— Lingarao Rajavarapu</div>
+        </div>
+      </section>
+    </div>
+	</body>
+</html>
