@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	<title>Prasanna Kumar  - Fullstack Developer</title>
+	<title>Prasanna Kumar Gollangi  - Fullstack Developer</title>
 	<style>
   	:root {
   --accent:#BC1B39;
@@ -92,38 +92,57 @@ section.heading header h2::after {
 section.heading header .contact {
   display: flex;
   flex-direction: column;
-  padding-bottom: var(--spacing);
+  /* padding-bottom: var(--spacing); */
 }
-@media (min-width: 567px) {
+
+section.heading header .header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 567px) {
+  section.heading header .header-container {
+    flex-direction: column;
+  }
+}
+@media print {
+  section.heading header .header-container {
+    flex-direction: row;
+  }
+}
+
+/* @media (min-width: 567px) {
   section.heading header .contact {
     flex-direction: row;
     justify-content: space-between;
   }
-}
+} */
 section.heading header address {
   font-size: 90%;
   font-style: normal;
-  padding-bottom: var(--spacing);
+  /* padding-bottom: var(--spacing); */
 }
 section.heading .profiles {
   display: flex;
   flex-direction: column;
   padding-bottom: var(--spacing);
 }
-@media (min-width: 567px) {
+
+/* @media (min-width: 567px) { */
   section.heading .profiles {
     flex-direction: row;
     justify-content: start;
   }
-}
+/* } */
 section.heading .profiles .profile.print {
   display: none;
 }
-@media print {
+/* @media print {
   section.heading .profiles .profile.print {
     display: block;
   }
-}
+} */
 section.heading .profiles strong {
   margin: 0 var(--spacing-small) 0 0;
 }
@@ -191,7 +210,7 @@ section.skills .item .name {
   white-space: nowrap;
 }
 section.skills .item .keywords {
-  display: inline-block;
+  display: inline;
   font-size: 90%;
   vertical-align: top;
 }
@@ -206,7 +225,7 @@ section.projects .item strong {
   color: var(--copy-color-light);
   font-weight: 600;
   display: inline-block;
-  padding-top: var(--spacing);
+  /* padding-top: var(--spacing); */
 }
 section.awards .item .title {
   font-weight: 600;
@@ -301,11 +320,11 @@ section.experience .item, section.volunteering .item, section.projects .item, se
   page-break-inside: avoid;
 }
 
-@media print {
+/* @media print {
   section.heading .profiles .profile:not(.print), section.publications .item .website {
     display: none;
   }
-}
+} */
 
 section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
   align-items: baseline;
@@ -313,6 +332,12 @@ section.experience .item header .subhead, section.volunteering .item header .sub
   justify-content: space-between;
 }
 @media (min-width: 567px) {
+  section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+    flex-direction: row;
+  }
+}
+
+@media print {
   section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
     flex-direction: row;
   }
@@ -338,20 +363,23 @@ section.experience .item header .subhead, section.volunteering .item header .sub
     <div id="resume">
       <section id="heading" class="heading">
         <header>
-          <h1>
-            Prasanna Kumar
-          </h1>
-          <h2>Fullstack Developer</h2>
-          <div class="summary"><p>I'm a full stack <b>web developer</b> who can build apps from the ground up. I've started my career at startup so I am use to wearing many hats. I am a very product focussed developer who prioritizes user feedback first and foremost. I'm generally very flexible when investigating new roles.</p></div>
-          <div class="contact">
-            <span class="contact-detail"><a href="mailto:prasannakumar.gollangi@gmail.com">prasannakumar.gollangi@gmail.com</a></span>
-            <span class="contact-detail">+91-8985995161</span>
-            <span class="contact-detail"><a href="https://pgollangi.com/" target="external">https://pgollangi.com/</a></span>
+          <div class="header-container">
+            <div>
+              <h1>Prasanna Kumar Gollangi</h1>
+              <h2>Fullstack Developer</h2>
+            </div>
+            <div class="contact">
+              <span class="contact-detail"><a href="mailto:prasannakumar.gollangi@gmail.com">prasannakumar.gollangi@gmail.com</a></span>
+              <span class="contact-detail">+91-8985995161</span>
+              <span class="contact-detail"><a href="https://p11r.dev/" target="external">https://p11r.dev/</a></span>
+              <address>
+                <span class="address-detail">Hyderabad, Telangana, India</span>
+                <span class="address-detail">IN</span>
+              </address>
+            </div>
           </div>
-          <address>
-            <span class="address-detail">Hyderabad, India</span>
-            <span class="address-detail">IN</span>
-          </address>
+          <div class="summary"><p>I'm a full stack developer, having 12 years of experience in design and developing the software, who can build apps from the ground up. I am a very product focussed developer who prioritizes user feedback first and foremost. I've started my career at startup so I am use to wearing many hats. I'm generally very flexible when investigating new roles.</p></div>
+          
         </header>
       
         <div class="profiles">
@@ -367,7 +395,7 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </span>
           </div>
           <div class="profile">
-            <strong class="network">github</strong>
+            <strong class="network">Github</strong>
             <span class="username">
               <a href="https://github.com/pgollangi" target="external">@pgollangi</a>
             </span>
@@ -438,37 +466,22 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <h3 class="name"><a href="https://www.opentext.com/" target="external">OpenText</a></h3>
             <div class="subhead">
             <span class="position">Lead Software Engineer</span>
-            <small class="dates">Apr 2021
+            <small class="dates">Mar 2018
              - Present</small>
             </div>
           </header>
-          <div class="summary"><p>OpenText is a Canadian enterprise product company that develops and sells enterprise information management software and other add-ons around information management. Contributed to building content management service under OT2 cloud services</p></div>
+          <div class="summary"><p>OpenText is a Canadian enterprise product company that develops and sells enterprise information management software and other add-ons around information management. I'm part of building SaaS based content management solutions under OT2 cloud services</p></div>
           <ul class="highlights">
-            <li>Build microservice backend with Java and SpringBoot.</li>
-            <li>Build widget based SmartUI app with Backbone.js, RequireJs (AMD).</li>
+            <li>Create microservice backend with Java and SpringBoot.</li>
+            <li>Develop widget based SmartUI app with Backbone.js, RequireJs (AMD).</li>
             <li>Cross framework solution to embed components created by modern frameworks.</li>
             <li>Create re-usable standalone web components.</li>
+            <li>Developed dev tools for working with OT2 cloud apps</li>
             <li>Used Figma for design and UX work.</li>
             <li>Optimizing page loading performance using caching, pre-fetch, compression and other techniques.</li>
-            <li>Lead an agile team</li>
+            <li>Lead an agile team of developers</li>
             <li>Perform peer reviews</li>
             <li>Jasmine, Karma, Mockito, JIRA, GitLab CI/CD, CloudFoundry, Docker</li>
-          </ul>
-        </section>
-        <section class="item">
-          <header>
-            <h3 class="name"><a href="https://www.opentext.com/" target="external">OpenText</a></h3>
-            <div class="subhead">
-            <span class="position">Senior Software Engineer</span>
-            <small class="dates">Mar 2018
-             - Mar 2021</small>
-            </div>
-          </header>
-          <ul class="highlights">
-            <li>Java</li>
-            <li>SpringBoot</li>
-            <li>Angular</li>
-            <li>BackboneJs</li>
           </ul>
         </section>
         <section class="item">
@@ -488,25 +501,26 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <li>Create prototypes for sales and promotional activities.</li>
             <li>Built micro service based RESTful APIs using Java, AWS for IOT apps</li>
             <li>Create hybrid mobile apps using Ionic</li>
-            <li>Postgres, Ionic2, Cordova, Sequelize</li>
+            <li>AWS, Microservices, Postgres, Ionic2, Cordova, Sequelize, ReactJS</li>
           </ul>
         </section>
         <section class="item">
           <header>
-            <h3 class="name"><a href="https://www.linkedin.com/company/325886" target="external">Vimukti Technologies</a></h3>
+            <h3 class="name"><a href="https://www.linkedin.com/company/vimukti-technologies" target="external">Vimukti Technologies</a></h3>
             <div class="subhead">
             <span class="position">Senior Software Engineer</span>
             <small class="dates">May 2010
              - May 2016</small>
             </div>
           </header>
-          <div class="summary"><p>Vimukti Technologies is startup organization committed to building enterprise softwares </p></div>
+          <div class="summary"><p>Vimukti Technologies is startup organization committed to building enterprise software. I'm gratefully got opportunity to work with almost all sort of tech stacks.</p></div>
           <ul class="highlights">
-            <li>Java</li>
-            <li></li>
-            <li></li>
-            <li>PostgreSQL</li>
-            <li>OSGi, Hibernate, GWT</li>
+            <li>Developer bootstraping of OSGi based multi-tenant app for ecgine</li>
+            <li>Developed user and tenant on-boarding activities under ecgine.</li>
+            <li>Developed active directory protocols such as DNS, DHCP using Java under a prototype.</li>
+            <li>Along with good accounting domain knowledge, handled complex accounting operations.</li>
+            <li>Built accounterlive frontend with GWT, RPC</li>
+            <li>OSGi, Hibernate, Postgres, GWT</li>
           </ul>
         </section>
       </section>
@@ -514,27 +528,158 @@ section.experience .item header .subhead, section.volunteering .item header .sub
         <section class="item">
           <h2>Projects</h2>
           <header>
-            <h3 class="name">Accounter</h3>
-            <small class="subhead">Feb 2011
-             - May 2012</small>
+            <h3 class="name">Core Content Management</h3>
+            <small class="subhead">Feb 2020
+             </small>
           </header>
-          <div class="summary"><p>A Business application integrates functionality like Accounting, using which you can manage your accounts.</p></div>
+          <div class="summary"><p>OT2 Core Content Management is a next-generation, SaaS Content Services Platform (CSP). Core Content combines content management expertise with integration into the applications that underpin business processes, including SAP S/4HANA Public Cloud, Salesforce, Microsoft 365.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            SpringBoot,
+            Backbone.js,
+            Angular
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Content Server SmartUI</h3>
+            <small class="subhead">Mar 2018
+             - Feb 2020</small>
+          </header>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            BackboneJS,
+            MarionetteJS,
+            RequireJS
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">TueoHealth</h3>
+            <small class="subhead">Mar 2017
+             - Aug 2017</small>
+          </header>
+          <div class="summary"><p>Tueo Health is creating a solution that puts this meaning to work in asthma management.  The solution delivers accurate, objective indicators of asthma control together with clinical insight and understanding of what patients and their families need to achieve the best control and outcomes.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Node,
+            Sequelize,
+            MySQL
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Senzit (Mann+Hummel)</h3>
+            <small class="subhead">Jun 2016
+             - Feb 2017</small>
+          </header>
+          <div class="summary"><p>Senzit is MANN-HUMMEL's filter solution IOT mobile application for your industrial vehicles. It brings actionable insights regarding air filter health among other information, which is customized for your unique operating conditions. Senzit helps avoid unnecessary machine downtime and reduces operating cost.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Typescript,
+            Ionic2,
+            Cordova
+          </span>
+          </div>
         </section>
         <section class="item">
           <header>
             <h3 class="name">Ecgine</h3>
-            <small class="subhead">May 2012
-             - May 2012</small>
+            <small class="subhead">Jul 2013
+             - May 2016</small>
           </header>
-          <div class="summary"><p>A tool to build and deploy business applications on Web, Mobile and Tablets. And this is an online tool that takes your requirement specification and generates native applications on all platforms.</p></div>
+          <div class="summary"><p>Ecgine is a unified business suite to develop and deploy business application on web. Ecgine provides perfect platform for business application developers to get complete control over their business system built on it.  </p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Java,
+            OSGi,
+            Postgres
+          </span>
+          </div>
         </section>
         <section class="item">
           <header>
-            <h3 class="name">Bizantra</h3>
-            <small class="subhead">May 2010
-             - Jan 2011</small>
+            <h3 class="name">Accounter</h3>
+            <small class="subhead">Feb 2011
+             - May 2013</small>
           </header>
-          <div class="summary"><p>A Business application integrates many functionality like User Management, Email Marketing, HR.</p></div>
+          <div class="summary"><p>A Business application integrates functionality like Accounting, using which you can manage your accounts.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Java,
+            Hibernate,
+            Postgres,
+            GWT
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">covidhospitals.online (open source)</h3>
+             </small>
+          </header>
+          <div class="summary"><p>Website to locate Covid19 Hospitals in India on Map with beds availability, hospital contact details, directions to navigate.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            ReactJS,
+            Leaflet,
+            OpenStreetMap,
+            MapQuest,
+            Netlify
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">pgollangi/netselect (open source)</h3>
+             </small>
+          </header>
+          <div class="summary"><p>A CLI tool and Go library to find the fastest site based on the lowest ICMP latency.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Golang,
+            CLI
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">pgollangi/fastget (open source)</h3>
+             </small>
+          </header>
+          <div class="summary"><p>A CLI tool and Go library to ultra fast download files over HTTP(S)</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Golang,
+            CLI
+          </span>
+          </div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">pgollangi/go-portfinder (open source)</h3>
+             </small>
+          </header>
+          <div class="summary"><p>Go implementation of npm portfinder.</p></div>
+          <div>
+          <strong>Stack:</strong>
+          <span class="keywords">
+            Golang,
+            Library
+          </span>
+          </div>
         </section>
       </section>
       <section id="education" class="education">
@@ -543,8 +688,8 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           <header>
               <h3 class="name">The Institution of Electronics and Telecommunication Engineers (IETE)</h3>
             <small class="dates">
-              <span class="startDate">Dec 2012</span>
-              <span class="endDate"> - Dec 2016</span>
+              <span class="startDate">Jun 2012</span>
+              <span class="endDate"> - Feb 2016</span>
             </small>
           </header>
           <div class="qualification">
@@ -556,18 +701,13 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           <header>
               <h3 class="name">Government Institute of Electronics</h3>
             <small class="dates">
-              <span class="startDate">Dec 2007</span>
+              <span class="startDate">Jun 2007</span>
               <span class="endDate"> - Dec 2010</span>
             </small>
           </header>
           <div class="qualification">
-            <span class="studyType">Diploma</span>
+            <span class="studyType">SDECP - Spl. Diploma in Electronics with Specialization in Computer Engg.</span>
             <span class="area">Computer Engineering</span>
-            <br>
-            <strong>Courses</strong>
-            <ul class="courses">
-              <li>SDECP - Spl. Diploma in Electronics with Specialization in Computer Engg.</li>
-            </ul>
           </div>
         </div>
       </section>

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "resume serve --theme full-ext",
-    "build": "resume export --theme full-ext dist/index.html"
+    "start": "node sync.js && resume serve --theme full-ext",
+    "build": "node sync.js && resume export --theme full-ext dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/pgollangi/resume#readme",
   "devDependencies": {
-    "jsonresume-theme-full": "0.0.4",
-    "jsonresume-theme-full-ext": "^1.0.0",
-    "jsonresume-theme-paper": "^0.5.0",
+    "jsonresume-theme-full-ext": "^1.1.0",
     "resume-cli": "^3.0.6"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
   }
 }
