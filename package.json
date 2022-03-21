@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/pgollangi/resume#readme",
   "devDependencies": {
-    "jsonresume-theme-full-ext": "^1.1.0",
+    "jsonresume-theme-full-ext": "^1.2.0",
     "resume-cli": "^3.0.6"
   },
   "dependencies": {
